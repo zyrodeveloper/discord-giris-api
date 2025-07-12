@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000;
+
+// Render gibi platformlar PORT'u env'den verir, yoksa 3001 kullan
+const port = process.env.PORT || 3001;
 
 const girisRoute = require("./api/giris");
 const cikisRoute = require("./api/cikis");
